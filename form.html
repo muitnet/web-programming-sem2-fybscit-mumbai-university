@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Contact Us</title>
+<style>
+.one form{
+margin:50px;
+}
+body{
+background-image:url("email.png");
+background-repeat:no-repeat;
+background-position:50% 50%;
+}
+h1{
+text-align:center;
+font-size:35px;
+color:#ff5500;
+}
+.inp{
+height:20px;
+width:400px;
+}
+</style>
+</head>
+<body>
+<script>
+function validate(){
+
+if(document.getElementById("firstname").value==""){
+alert("please enter your first name");
+return false;
+}
+if(document.getElementById("lastname").value==""){
+alert("please enter your last name");
+return false;
+}
+if(document.getElementById("selectany").value==""){
+alert("please select your Qualification");
+return false;
+}
+if(document.getElementById("email").value==""){
+alert("please enter your EMAIL");
+return false;
+}
+if(document.getElementById("sub").value==""){
+alert("please enter Subject");
+return false;
+}
+if(document.getElementById("mobileno").value==""||document.getElementById("mobileno").value!=10){
+alert("please enter proper mobile number ");
+return false;
+}
+}
+</script>
+<h1>CONTACT US</h1>
+<div class="one">
+<form name="myform" onsubmit="return validate();">
+  Title:<br>
+  <input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female<br>
+
+  First name:<br>
+  <input type="text" id="firstname" name="firstname"><br>
+  Last name:<br>
+  <input type="text" id="lastname" name="lastname"><br>
+  Email:<br>
+  <input type="text" id="email"><br>
+  Qualification:<br>
+				<select id="selectany">
+				<option value="BSCIT">BSC IT</option>
+				<option value="BSC CS">BSC CS</option>
+				<option value="BCA">BCA</option>
+				</select><br>
+  
+  Subject:<br>
+  <input type="text" id="sub><br>
+  Message:<br>
+  <input type="text" id="message"><br>
+  Mobile No:<br>
+  <input type="number" maxlength="10" size="10" id="mobileno">
+  <br><br>
+  <input type="submit" value="Submit">
+
+</form> 
+</div>
+</body>
+</html>

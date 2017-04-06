@@ -1,0 +1,99 @@
+<html>
+<head>
+<style>
+div input[type=button]{
+    background-color: #bfbfbf;
+    border: none;
+    color: #000000;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<form id="xyz" name="abc" align="center">
+<input name="result"><br>
+<input name="answ"><br><br>
+<div>
+<input type="button" name="c" value="C" onclick="runreset()">
+<input type="button" name="+" value="+" onclick="runadd()">
+<input type="button" name="-" value="-" onclick="runsub()"><br>
+<input type="button" name="7" value="7" onclick="run7()">
+<input type="button" name="8" value="8" onclick="run8()">
+<input type="button" name="9" value="9" onclick="run9()"><br>
+<input type="button" name="4" value="4" onclick="run4()">
+<input type="button" name="5" value="5" onclick="run5()">
+<input type="button" name="6" value="6" onclick="run6()"><br>
+<input type="button" name="1" value="1" onclick="run1()">
+<input type="button" name="2" value="2" onclick="run2()">
+<input type="button" name="3" value="3" onclick="run3()"><br>
+<input type="button" name="0" value="0" onclick="run0()">
+<input type="button" name="." value=" ." onclick="runpoint()">
+<input type="button" name="=" value="=" onclick="runresl()"><br>
+<input type="button" name="*" value=" *" onclick="runmul()">
+<input type="button" name="/" value="/" onclick="rundiv()">
+
+
+</div>
+</form>
+<script>
+function run1(){
+document.abc.result.value+="1";
+}
+function run2(){
+document.abc.result.value+="2";
+}
+function run3(){
+document.abc.result.value+="3";
+}
+function run4(){
+document.abc.result.value+="4";
+}
+function run5(){
+document.abc.result.value+="5";
+}
+function run6(){
+document.abc.result.value+="6";
+}
+function run7(){
+document.abc.result.value+="7";
+}
+function run8(){
+document.abc.result.value+="8";
+}
+function run9(){
+document.abc.result.value+="9";
+}
+function run0(){
+document.abc.result.value+="0";
+}
+function runadd(){
+document.abc.result.value+="+";
+}
+function runsub(){
+document.abc.result.value+="-";
+}
+function runmul(){
+document.abc.result.value+="*";
+}
+function rundiv(){
+document.abc.result.value+="/";
+}
+function runpoint(){
+document.abc.result.value+=".";
+}
+function runresl(){
+var ans=eval(document.abc.result.value);
+document.abc.answ.value=ans;
+}
+function runreset(){
+document.getElementById("xyz").reset();
+}
+</script>
+</body>
+</html>

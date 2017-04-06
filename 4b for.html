@@ -1,0 +1,19 @@
+<html>
+<body>
+<h1 align="center">FOR LOOP</h1>
+<form>
+ENTER THE NO.TO PRINT SERIES UPTO THAT NO:<input type="number" id="no"><br><br>
+<input type="submit" value="Check" onclick="myfun()"> 
+</form>
+<script>
+function myfun(){
+var n;
+n=document.getElementById("no").value;
+for(i=1;i<=n;i++)
+{
+document.write( i+" <br>");
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<body>
+<form>
+Enter The No. To Find Sum of Digits:<input type="number" id="no"><br><br>
+<input type="submit" value="Check" onclick="myfun()"> 
+</form>
+<div id="abc">
+<textarea id="xyz"></textarea>
+</div>
+<script>
+function myfun()
+{
+var n;
+n=document.getElementById("no").value;
+var R,S=0;
+while(n!=0)
+{
+R=n%10;
+S=S+R;
+n=Math.floor(n/10);
+}
+alert("THE SUM IS : " + S); 
+}
+</script>
+</body>
+</html>

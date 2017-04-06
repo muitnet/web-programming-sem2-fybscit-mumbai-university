@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1 align="center">DO WHILE LOOP</h1>
+<form>
+ENTER THE NO.TO PRINT SERIES UPTO THAT NO:<input type="number" id="no"><br><br>
+<input type="submit" value="Check" onclick="myfun()"> 
+</form>
+<script>
+function myfun(){
+var n,i=0;
+n=document.getElementById("no").value;
+do
+{
+i++;
+document.write(i+" <br>");
+}while(i<n);
+}
+</script>
+</body>
+</html>

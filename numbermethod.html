@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Number object Demo</title>
+<style>
+#one{
+  float: left;
+  width: 125px;
+  text-align:left;
+  margin: 2px 50px;
+  display: inline;
+}
+#two{
+  float: left;
+  text-align: left;
+  margin: 2px 100px;
+  display: inline;
+}
+</style>
+</head>
+<body>
+<div id="one">
+<p>toString Method<p>
+<p id="toString"></p>
+<p>toExponential Method<p>
+<p id="toExponential"></p>
+<p><p>
+<p id=""></p>
+<p>toFixed Method<p>
+<p id="toFixed"></p>
+<p>toPrecision Method</p>
+<p id="toPrecision"></p>
+<p>valueOf Method</p>
+<p id="valueOf"></p>
+</div>
+<div id="two">
+<p>Number Method</p>
+<p id="Number"></p>
+<p>parseInt Method</p>
+<p id="parseInt"></p>
+<p>parseFloat Method</p>
+<p id="parseFloat"></p>
+<p>MAX_VALUE Method</p>
+<p id="MAX_VALUE"></p>
+</div>
+<script>
+var x = 123;
+document.getElementById("toString").innerHTML =
+    x.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString();
+var x = 9.656;
+document.getElementById("toExponential").innerHTML =
+    x.toExponential() + "<br>" + 
+    x.toExponential(2) + "<br>" + 
+    x.toExponential(4) + "<br>" + 
+    x.toExponential(6);
+var x = 9.656;
+document.getElementById("toFixed").innerHTML =
+    x.toFixed(0) + "<br>" +
+    x.toFixed(2) + "<br>" +
+    x.toFixed(4) + "<br>" +
+    x.toFixed(6);
+var x = 9.656;
+document.getElementById("toPrecision").innerHTML = 
+    x.toPrecision() + "<br>" +
+    x.toPrecision(2) + "<br>" +
+    x.toPrecision(4) + "<br>" +
+    x.toPrecision(6);
+var x = 123;
+document.getElementById("valueOf").innerHTML = 
+    x.valueOf() + "<br>" +
+    (123).valueOf() + "<br>" +
+    (100 + 23).valueOf();
+document.getElementById("Number").innerHTML = 
+    Number(true) + "<br>" +
+    Number(false) + "<br>" +
+    Number(new Date()) + "<br>" +
+    Number("  10") + "<br>" +
+    Number("10  ") + "<br>" +
+    Number("10 6");
+document.getElementById("parseInt").innerHTML = 
+    parseInt("10") + "<br>" +
+    parseInt("10.33") + "<br>" +
+    parseInt("10 6") + "<br>" +    
+    parseInt("10 years") + "<br>" +    
+    parseInt("years 10");
+document.getElementById("parseFloat").innerHTML = 
+    parseFloat("10") + "<br>" +
+    parseFloat("10.33") + "<br>" +
+    parseFloat("10 6") + "<br>" +    
+    parseFloat("10 years") + "<br>" +
+    parseFloat("years 10");
+document.getElementById("MAX_VALUE").innerHTML = Number.MAX_VALUE;	
+</script>
+</body>
+</html>

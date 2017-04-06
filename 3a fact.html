@@ -1,0 +1,23 @@
+<html>
+<head>
+
+</head>
+<body>
+Enter Num: <input id="num">
+<button onclick="fact()">Factorial</button><br><br>
+THE FACTORIAL OF NO. IS :<input id="ans">
+<script>
+function fact(){
+
+var i, no, fact;
+fact=1;
+no=document.getElementById("num").value;
+for(i=1; i<=no; i++)  
+{
+fact= fact*i;
+}  
+document.getElementById("ans").value= fact;
+}
+</script>
+</body>
+</html>

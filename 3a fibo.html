@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function myfun()
+{
+var a,b,c,n;
+a=0;
+b=1;
+n=document.getElementById("abc").value;
+c=0;
+ while (b <= n) {  
+document.write(c + " <br/>")
+c = a + b;
+a = b;
+b = c;
+}
+}
+</script>
+</head>
+<body>
+<form>
+ENTER THE NUMBER TO FIND THE FIBONACII SERIES : <input type="number" id="abc"><br><br>
+												<input type="submit" value="Check !t" onclick="myfun()"><br>
+
+</form>
+
+</body>
+</html>

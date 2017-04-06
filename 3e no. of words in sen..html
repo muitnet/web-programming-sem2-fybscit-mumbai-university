@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Without using split function</title>
+<script>
+function myfun(){
+var str=document.getElementById("input").value;
+var count=0;
+for(i=0;i<str.length;i++)
+{
+if(str.charAt(i,1)==" " && str.charAt(i+1,1)!=" ")
+count++;
+}
+alert("Number of words are="+(count+1));
+}
+</script>
+</head>
+<body>
+<form>
+ENTER THE SENTENCE : <input type="text" id="input"><br><br>
+<input type="submit" onclick="myfun()">
+</form>
+</body>
+</html>
